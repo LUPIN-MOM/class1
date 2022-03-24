@@ -1,0 +1,70 @@
+
+/* css 작성 
+셀렉터{속성:값;} 
+
+*태그<클래스 (클래스가 선적용)
+*태그<컴파운드(부모자식 형식이 선적용)
+*클래스<컴파운드(부모자식 형식이 선적용)
+
+*/
+
+.btn1{
+    background-color: yellowgreen;
+    width: 150px;
+    height: 40px;
+    /* text-color: green; */
+    line-height: 2.3;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 2.5px solid LightGreen; */
+    border-radius: 1rem;
+}
+
+.btn2{
+    background-color: yellowgreen;
+}
+
+.s1{
+    border: 1px solid #b4b4b4;
+    padding: 60px;
+    margin: 50px auto;
+    width: 400px;
+}
+
+.s1>h2{
+    font-size: 42px;
+    color:pink
+}
+
+.s1>p{
+    line-height: 2;  /* 2 or 200%가 같다 */
+}
+
+.s1>span{
+    width: 200px;
+}
+
+.s2{
+    border: 1px solid #b4b4b4;
+    padding: 60px;
+    margin: 50px auto;
+    width: 400px;
+}
+
+.s2>h2{
+    font-size: 42px;
+    color:lightblue
+}
+
+.s3{
+    border: 1px solid #b4b4b4;
+    padding: 60px;
+    margin: 50px auto;
+    width: 400px;
+}
+
+.s3>h2{
+    font-size: 42px;
+    color:plum
+}
+
