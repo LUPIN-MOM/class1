@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- tag.html   -->
+<!-- 
+    block - div, h, p, (ul,li), (figure, figcaptioin)
+    *특징) 한줄내리기, 가로 사이즈 100%, 스타일 제약 없음
+
+
+    inline - span, (b, strong), (em, i), mark, img, a  
+    *특징) 스타일 제약 있음(사이즈,여백)  
+           가로사이즈 : 콘텐츠 크기만큼 설정, 한줄내리기 없음
+-->
+
+<style>
+    article{
+        background: #eee;
+        padding: 10px;
+        margin:60px;
+    }   
+    li{
+        list-style: none;
+        padding-left: 0px;
+    }
+</style>
+
+<article>
+    <h2>Block Tag</h2>   <!-- 제목이있는 내용을 쓸때 -->
+    
+    <div>
+        <h1>타이틀 1</h1> <!-- 한문서에 h1 태그를 한번만 쓸수있음 -->
+        <h2>타이틀 2</h2>
+        <h3>타이틀 3</h3>
+        <h4>타이틀 4</h4>
+        <h5>타이틀 5</h5>
+        <h6>타이틀 6</h6>
+        <p>
+            특징) h1~h6 숫자가 작을수록 타이틀의 크기가 크다. bold <br>
+            주의) inline 요소만 자식으로 사용 가능
+        </p>
+    </div>
+    <hr>
+
+    <div>
+        <div>box 형태의 콘텐츠를 그룹(특징은 모든 요소를 자식으로 포함)</div>
+        <p>문서의 단락 의미(자식 요소로 inline 요소만 포함)</p>
+    </div>
+
+    <hr>
+    <ul>
+        <li>목록이 없는 리스트 형태 콘텐츠</li>
+        <li>특징) 블릿과 여백을 갖고 있음</li>
+    </ul>
+
+    <hr>
+    <figure>
+        이미지, 영상, 도표와 같은 콘텐츠 표현
+        <figcaption>제목, 영상 </figcaption>
+
+    </figure>
+
+</article>
+
+<hr>
+
+<article>
+    <h2>inline Tag</h2> <!-- 문자의 크기만큼만 설정되있음 -->
+    <ul>
+        <li>
+            b, strong  -> bold 의미(<b>문자 두껍게</b>) <br> 
+            *<strong>strong</strong> 태그가 중요도가 더 높음
+        </li>
+        <li>
+            em, i -> 문자 강조(<i>italic</i>) <br>
+            *<em>em</em> 태그가 중요도가 높음
+        </li>
+        <li>
+            mark -> 문자 강조(<mark>배경색</mark>을 이용)
+        </li>
+        <li>
+            <a href="../1일차/basic.html" style="text-decoration: none; color:black" target="_blank">a 속성(href="문서 경로 지정") -> 링크</a>
+        </li>
+        <li>
+            <img src="../img/ple-4.jpg" alt="이미지 제목 또는 내용" style="position: relative;"> <!-- alt를 빼면 웹표준에 적합하지않음 -->
+        </li>
+        <li>
+            <span>inline 요소들을 그룹 </span>
+        </li>
+    </ul>
+</article>
+
+  <!-- 
+
+   1  '/'    -> 가장 최상의 디렉토리로 이동한다.(Web root)
+   2  './'   -> 파일이 현재 디렉토리를 의미한다.
+   3  '../'  -> 상위 디렉토리로 이동한다.
+
+  [상대경로] 90% 사용
+  현재 문서에서 찾고자하는 데이터로 찾아가는 방식
+    / : 루트(시작 폴더)
+    ./ : 현재 위치
+    ../ : 현재 위치의 상단 폴더
+  ex) ../img폴더/이미지명.jpg  
+
+  [절대경로] 10% 이하 사용
+  1. 시스템 경로라고도 함
+  c:/ 또는 http:// 등을 모두 절대경로라고 함
+
+  2. 경로가 / 기호로 시작해도 절대경로라고 함
+
+  -->
+
+</body>
+</html>
