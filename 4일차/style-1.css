@@ -1,0 +1,24 @@
+.m-p{
+    width: 600px;
+    margin:100px auto;
+    border:1px solid rgb(218, 218, 218);
+    padding: 60px;
+}
+.m-p>h2{
+    color:hotpink;
+}
+.m-p>div{ padding-top:60px;}
+.m-p>div>b{}
+.m-p>div>p{
+    /* <br>태그없이 줄내림할수있음 */
+    white-space: pre-line;
+    /* margin:60px; /*상하좌우*/
+    /* margin:0px 60px; 상하 좌우 */
+    /* margin:0px 60px 60px; 상 가로 하 */
+    /* margin:0px 60px 60px 0px; 상우하좌 */ */
+    
+    /* margin-top:60px;
+    margin-right:60px;
+    margin-bottom:60px; */
+    /* margin-left:60px; */
+}

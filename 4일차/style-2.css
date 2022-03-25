@@ -1,0 +1,28 @@
+.ex{
+    width: 600px;
+    display: flex;
+    border:1px solid #d6d6d6;
+    background-color:rgb(250, 241, 230);
+    padding: 60px;
+}
+
+.ex > div{
+    padding:20px 40px;
+}
+
+div h2{
+    font-size: 30px;
+    color:rgb(103, 155, 103);
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -.25px;
+    line-height: 2;
+}
+
+div > p{
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(107, 174, 135);
+    letter-spacing: -.25px;
+    line-height: 2.5;
+}
