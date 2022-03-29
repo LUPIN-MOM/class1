@@ -1,0 +1,52 @@
+.box-1{ width: 1000px; margin: 100px auto;}
+
+        /* 가로정렬:flex, float */
+.box-1 > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1 > div > div{
+    width: 300px; height: 200px;
+    background-color: #ddd;
+}
+
+.box-2 { width: 1000px; margin: 100px auto;}
+
+.box-2 > h2{
+    
+}
+
+.box-2 > div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.box-2 > div > div{
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    
+}
+
+.box-3 { width: 1000px; margin: 100px auto;}
+
+.box-3 > h2 {
+
+}
+
+.box-3 > div {
+    display: flex;
+    justify-content: space-between;
+
+    /* box-3 가로 크기보다 커질때 아랫줄로 내림 */
+    flex-wrap: wrap;
+}
+
+.box-3 > div > div{
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    margin-top:50px;
+}
