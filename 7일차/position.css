@@ -1,4 +1,5 @@
 
+/* pos-relative */
 .pos-relative{
     width: 80%; margin: 100px auto;
     background-color: #eee;
@@ -18,7 +19,7 @@
 .pos-relative > img {}
 
 
-
+/* pos-absolute */
 .pos-absolute{
     width: 80%; margin: 100px auto;
     background-color: #eee;
@@ -36,7 +37,54 @@
     margin: 0 auto;
     position: absolute;
     left: 34.5%;
-    top: 166%;
+    top: 16%;
     /* left: 100px; top: 100px; */
 }
 .pos-absolute > img {}
+
+
+/* pos-fixed */
+.pos-fixed{
+    width: 80%;
+    margin:100px auto;
+    padding : 60px;
+    background-color: #eee;
+    position: relative;
+}
+.pos-fixed h2{}
+.pos-fixed p{white-space: pre-line;}
+.pos-fixed .header{
+    width: 100%;
+    padding : 30px 0;
+    background-color: #d85479;
+    position: fixed;
+    top:0; left:0;
+    text-align: center;
+    font-weight: 600;
+}
+.pos-fixed .aside{
+    width: 100px;
+    position: fixed;
+    right:0; bottom: 0;
+    height: 100px;
+    z-index: 9999999999999999999999999999999999;
+    background-color: #41bd77;
+}
+
+
+/* sticky */
+.pos-sticky{
+    width: 80%; margin:100px auto;
+    padding : 60px;
+    background-color: #eee;
+    height: 800px;
+    position: sticky;
+    z-index: 9999999999999999999999;
+}
+
+.pos-sticky h2{}
+.pos-sticky div{
+    position: sticky;
+    top:0;
+    white-space: pre-line;
+} 
