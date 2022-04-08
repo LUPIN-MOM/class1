@@ -1,0 +1,43 @@
+@import url("./common.css");
+
+
+.visual{
+    position: relative;
+}
+.visual > img{width: 100%;}
+.visual > article {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding: 20px;
+    transform: translate(-50%, 10%);
+    background-color: #fff;
+    box-shadow: 0 0 30px rgb(64 64 64 / 32%);
+    transition: 0.5s;
+}
+.visual:hover > article {
+    bottom: 50%;
+    transform: translate(-50%,50%);
+}
+.visual > article > h2 {
+    /* padding-bottom:20px; */
+    margin:10px 0 30px 0;
+    text-transform:uppercase;
+}
+.visual > article > figure{}
+.visual > article > figure img{width: 100%;}
+.visual > article > figure figcaption{text-align: center;}
+.visual > article > figure figcaption p{
+    margin: 20px 0;
+}
+.visual > article > h2 > figure figcaption a{
+    margin: 20px 0;
+}
+.btn{
+    background-color: #222;
+    color:#fff;
+    text-transform: uppercase;
+    padding : 10px 30px;
+    display: inline-block;
+}
+
